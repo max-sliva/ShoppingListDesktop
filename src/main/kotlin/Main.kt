@@ -33,7 +33,7 @@ fun main(args: Array<String>) {
 
 fun downloadList(path: String){
     try {
-        //output file for download --> storage location on local system to download file
+        //todo сделать загрузку в папку проекта без абсолютного пути
         val downloadFile: OutputStream = FileOutputStream("F:\\KtlnProjects\\untitled5\\shoppingList.txt")
         try {
             val metadata: FileMetadata = client!!.files().downloadBuilder(path)
